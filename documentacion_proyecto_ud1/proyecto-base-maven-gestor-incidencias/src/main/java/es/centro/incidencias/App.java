@@ -4,12 +4,26 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Clase principal del gestor
+ * Permite ejnecutar la app mediante un menu interactuvo, omediante argumentros introducidos
+ * @author gorka
+ * @version 1.0
+ * @since 1.0
+ * @see GestorIncidencias
+ */
 
 public final class App {
 
     private App() {
     }
 
+    /**
+     * Indica la aplicacion del gestor
+     * Si no se reciben argumentos, muestra el menu
+     * si se recinben argumentos, ejecuta la operacion indicada
+     * @param args argumentos de entrada que permiten seleccionar la operacion que se quiere ejecutar
+     */
     public static void main(String[] args) {
         GestorIncidencias gestor = new GestorIncidencias();
 
